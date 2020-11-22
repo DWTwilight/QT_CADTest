@@ -1,0 +1,26 @@
+﻿  Generate moc_predefs.h
+  Moc'ing cadscene.h...
+  Moc'ing frmconfirmcreation.h...
+  Moc'ing frmconfirmsubdivide.h...
+  Moc'ing mainwindow.h...
+  actionlistener.cpp
+  cadpart.cpp
+  cadscene.cpp
+  edge.cpp
+  frmconfirmcreation.cpp
+  frmconfirmsubdivide.cpp
+  gradingpath.cpp
+  main.cpp
+  mainwindow.cpp
+  vertex.cpp
+  moc_cadscene.cpp
+  moc_frmconfirmcreation.cpp
+e:\qt projects\ztc5160\ztc5160\edge.cpp(106): warning C4100: “event”: 未引用的形参
+e:\qt projects\ztc5160\ztc5160\edge.cpp(112): warning C4100: “event”: 未引用的形参
+e:\qt projects\ztc5160\ztc5160\vertex.cpp(213): warning C4100: “event”: 未引用的形参
+e:\qt projects\ztc5160\ztc5160\vertex.cpp(219): warning C4100: “event”: 未引用的形参
+e:\qt projects\ztc5160\ztc5160\frmconfirmsubdivide.cpp(4): warning C4100: “parent”: 未引用的形参
+e:\qt projects\ztc5160\ztc5160\frmconfirmcreation.cpp(4): warning C4100: “parent”: 未引用的形参
+  moc_frmconfirmsubdivide.cpp
+  moc_mainwindow.cpp
+  CADTest.vcxproj -> E:\QT Projects\ztc5160\ztc5160\debug\CADTest.exe

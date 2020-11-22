@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>CADTest</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="gpvView">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>10</y>
+      <width>1191</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1191</width>
+      <height>661</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1191</width>
+      <height>661</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblMode">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>20</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Object Mode</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEllipse">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>Ellipse</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLine">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>Line</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnTLine">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>T Line</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSubdivide">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>Subdivide</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGrading">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>Grading</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuNew">
+     <property name="title">
+      <string>New</string>
+     </property>
+     <addaction name="actionDefault_Scene"/>
+     <addaction name="actionEmpty_Scene"/>
+    </widget>
+    <addaction name="menuNew"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <widget class="QMenu" name="menuSelect_Mode">
+     <property name="title">
+      <string>Select Mode</string>
+     </property>
+     <addaction name="actionVertex"/>
+     <addaction name="separator"/>
+     <addaction name="actionEdge_num2"/>
+    </widget>
+    <widget class="QMenu" name="menuVertex_Tools">
+     <property name="title">
+      <string>Vertex Tools</string>
+     </property>
+     <addaction name="actionConnect_Selected_F"/>
+     <addaction name="actionExtrude_E"/>
+    </widget>
+    <widget class="QMenu" name="menuObject_Tools">
+     <property name="title">
+      <string>Object Tools</string>
+     </property>
+     <addaction name="actionCombine_Selected_J"/>
+    </widget>
+    <addaction name="actionEnter_Exit_EditMode_Tab"/>
+    <addaction name="separator"/>
+    <addaction name="actionMove_G"/>
+    <addaction name="actionRotate_R"/>
+    <addaction name="actionScale_S"/>
+    <addaction name="separator"/>
+    <addaction name="actionSelect_All_A"/>
+    <addaction name="actionDelete_delete"/>
+    <addaction name="separator"/>
+    <addaction name="menuSelect_Mode"/>
+    <addaction name="separator"/>
+    <addaction name="menuVertex_Tools"/>
+    <addaction name="menuObject_Tools"/>
+   </widget>
+   <widget class="QMenu" name="menuGrading_Settings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionGrading_Settings"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuGrading_Settings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionDefault_Scene">
+   <property name="text">
+    <string>Default Scene</string>
+   </property>
+  </action>
+  <action name="actionEmpty_Scene">
+   <property name="text">
+    <string>Empty Scene</string>
+   </property>
+  </action>
+  <action name="actionEnter_Exit_EditMode_Tab">
+   <property name="text">
+    <string>Enter/Exit EditMode(Tab)</string>
+   </property>
+  </action>
+  <action name="actionMove_G">
+   <property name="text">
+    <string>Move(G)</string>
+   </property>
+  </action>
+  <action name="actionRotate_R">
+   <property name="text">
+    <string>Rotate(R)</string>
+   </property>
+  </action>
+  <action name="actionScale_S">
+   <property name="text">
+    <string>Scale(S)</string>
+   </property>
+  </action>
+  <action name="actionSelect_All_A">
+   <property name="text">
+    <string>Select All(A)</string>
+   </property>
+  </action>
+  <action name="actionDelete_delete">
+   <property name="text">
+    <string>Delete(delete)</string>
+   </property>
+  </action>
+  <action name="actionVertex">
+   <property name="text">
+    <string>Vertex(num1)</string>
+   </property>
+  </action>
+  <action name="actionEdge_num2">
+   <property name="text">
+    <string>Edge(num2)</string>
+   </property>
+  </action>
+  <action name="actionConnect_Selected_F">
+   <property name="text">
+    <string>Connect Selected(F)</string>
+   </property>
+  </action>
+  <action name="actionExtrude_E">
+   <property name="text">
+    <string>Extrude(E)</string>
+   </property>
+  </action>
+  <action name="actionCombine_Selected_J">
+   <property name="text">
+    <string>Combine Selected(J)</string>
+   </property>
+  </action>
+  <action name="actionGrading_Settings">
+   <property name="text">
+    <string>Change Grading Setting</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

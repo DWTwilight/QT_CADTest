@@ -1,0 +1,10 @@
+﻿  Uic'ing frmconfirmsubdivide.ui...
+  Moc'ing frmconfirmsubdivide.h...
+  cadpart.cpp
+  cadscene.cpp
+  frmconfirmcreation.cpp
+  frmconfirmsubdivide.cpp
+  moc_frmconfirmsubdivide.cpp
+e:\qt projects\cadtest\frmconfirmsubdivide.cpp(16): warning C4100: “arg1”: 未引用的形参
+e:\qt projects\cadtest\frmconfirmcreation.cpp(4): warning C4100: “parent”: 未引用的形参
+  CADTest.vcxproj -> E:\QT Projects\CADTest\debug\CADTest.exe
